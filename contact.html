@@ -1,72 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Ashita Kumari</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Level 03: Save Point — Ashita Kumari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-  <div class="logo">Ashita Kumari</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="header-icons">
-    <a href="https://www.linkedin.com/in/ashita-kumari-00876135b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/Ashita829" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="Resume.pdf" class="btn-light">Resume</a>
+
+<div class="topbar">
+  <div class="ticker">
+    <span>★ ABOUT ME</span><span>★ PROJECTS</span><span>★ CONTACT</span>
+    <span>★ ABOUT ME</span><span>★ PROJECTS</span><span>★ CONTACT</span>
   </div>
+</div>
+
+<header class="masthead">
+  <a href="index.html" class="logotype">ASHITA <span class="k">KUMARI</span></a>
+  <p class="sub">Computer Science · Software &amp; AI</p>
+  <nav class="game-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="current">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
+<main style="position:relative;">
+  <span class="decor star" style="top:20px; right:6%;"></span>
 
-  <section class="contact">
-    <h1>Contact Me</h1>
+  <div class="level-header" style="text-align:center; max-width:700px;">
+    <p class="kicker">LEVEL 03</p>
+    <h1>SAVE POINT</h1>
+    <p class="dek" style="margin-left:auto; margin-right:auto;">Your progress is saved here. Reach out any time — I read every message.</p>
+  </div>
 
-    <div class="contact-grid">
-      <!-- Left: Contact Info -->
-      <div class="contact-info">
-        <h3>📧 Email:</h3>
-        <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">ashitakumari15@gmail.com</a></p>
-
-        <h3>🔗 LinkedIn:</h3>
-        <p>
-          <a href="https://www.linkedin.com/in/ashita-kumari-00876135b/" target="_blank">
-            <i class="fab fa-linkedin"></i> Ashita kumari
-          </a>
-        </p>
-
-        <h3>💻 GitHub:</h3>
-        <p>
-          <a href="https://github.com/Ashita829" target="_blank">
-            <i class="fab fa-github"></i> Ashita829
-          </a>
-        </p>
+  <section class="save-point">
+    <div class="pixel-panel reveal save-menu">
+      <div class="panel-titlebar">CONTACT MENU <div class="dots"><span></span><span></span><span></span></div></div>
+      <div class="panel-body">
+        <ul>
+          <li>
+            <div>
+              <span class="k">EMAIL</span>
+              <a href="mailto:ashitakumari15@gmail.com">ashitakumari15@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span class="k">PHONE</span>
+              <a href="tel:+923373334917">+92 337-3334917</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span class="k">LINKEDIN</span>
+              <a href="https://www.linkedin.com/in/ashita-kumari-00876135b/" target="_blank">Ashita Kumari</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span class="k">GITHUB</span>
+              <a href="https://github.com/Ashita829" target="_blank">Ashita829</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span class="k">LOCATION</span>
+              <span>Karachi, Pakistan</span>
+            </div>
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <!-- Right: Contact Form -->
-      <form onsubmit="submitForm(event)" class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send</button>
-      </form>
+    <div class="pixel-panel reveal">
+      <div class="panel-titlebar">NEW MESSAGE <div class="dots"><span></span><span></span><span></span></div></div>
+      <div class="panel-body">
+        <form onsubmit="submitForm(event)">
+          <div class="form-field">
+            <label for="name">YOUR NAME</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">YOUR EMAIL</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-field">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="pixel-btn pink">SAVE &amp; SEND ▶</button>
+        </form>
+      </div>
     </div>
   </section>
+</main>
 
-  <footer>
-  <p>&copy; 2025 Ashita Kumari</p>
-  <div class="social">
-    <a href="https://www.linkedin.com/in/ashita-kumari-00876135b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/Ashita829" target="_blank"><i class="fab fa-github"></i></a>
+<footer class="game-foot">
+  <div class="wrap">
+    <span>© 2026 ASHITA K.</span>
+    <span>LEVEL 03 / 03</span>
+    <span class="social">
+      <a href="https://www.linkedin.com/in/ashita-kumari-00876135b/" target="_blank">LINKEDIN</a>
+      <a href="https://github.com/Ashita829" target="_blank">GITHUB</a>
+    </span>
   </div>
 </footer>
 
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
