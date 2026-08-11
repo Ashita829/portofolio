@@ -1,167 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ashita Kumari — 2026 Portfolio</title>
-<meta name="description" content="Ashita Kumari — Computer Science student in Karachi, building in software development and AI/ML." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashita Kumari — Portfolio.exe</title>
+  <meta name="description"
+    content="Ashita Kumari — Computer Science student specializing in AI & Machine Learning. Portfolio of projects, skills and experience.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="topbar">
-  <div class="ticker">
-    <span>★ ABOUT ME</span><span>★ PROJECTS</span><span>★ CONTACT</span>
-    <span>★ ABOUT ME</span><span>★ PROJECTS</span><span>★ CONTACT</span>
+  <div class="bg-grid"></div>
+  <div class="bg-decor">
+    <span class="pixel-star">★</span>
+    <span class="pixel-star">★</span>
+    <span class="pixel-star">★</span>
+    <span class="pixel-star">★</span>
+    <span class="pixel-star">★</span>
+    <span class="pixel-star">★</span>
+    <div class="pixel-cloud c1"></div>
+    <div class="pixel-cloud c2"></div>
+    <div class="pixel-cloud c3"></div>
   </div>
-</div>
 
-<header class="masthead">
-  <a href="index.html" class="logotype">ASHITA <span class="k">KUMARI</span></a>
-  <p class="sub">Computer Science · Software &amp; AI</p>
-  <nav class="game-nav">
-    <ul>
-      <li><a href="index.html" class="current">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <nav class="navbar">
+    <div class="logo">AK<span>_</span></div>
+    <ul class="nav-links">
+      <li><a href="#player">Player</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#quests">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#save">Contact</a></li>
     </ul>
+    <div class="burger" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </nav>
-</header>
 
-<main style="position:relative;">
-  <span class="decor star" style="top:60px; left:6%;"></span>
-  <span class="decor star" style="top:220px; right:8%; width:16px; height:16px;"></span>
-  <span class="decor cloud" style="top:110px; right:14%;"></span>
-  <span class="decor cloud" style="top:400px; left:4%;"></span>
-
-  <section class="title-screen reveal">
-    <div class="title-card">
-      <p class="year">2026</p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner wrap">
+      <div class="year">2026</div>
       <h1>PORTFOLIO</h1>
-      <a href="#player" class="start-btn">▶ START</a>
+      <p class="tagline">A <strong>Computer Science</strong> student building things in code, data & AI —
+        one commit at a time.</p>
+      <a href="#player" class="start-btn">▶ Start</a>
+      <div class="scroll-cue">scroll to begin ▾</div>
     </div>
   </section>
 
-  <section class="player-intro reveal" id="player">
-    <p class="kicker">LEVEL 01 — MEET THE PLAYER</p>
-    <div class="player-grid">
-      <div class="console">
-        <div class="screen-bezel">
-          <div class="screen">
-            <img src="ashita.jpg" alt="Ashita Kumari" />
+  <!-- LEVEL 01 — PLAYER -->
+  <section class="section" id="player">
+    <div class="wrap">
+      <span class="eyebrow">LEVEL 01</span>
+      <h2 class="level-title">Meet the Player</h2>
+      <p class="section-sub">Everything you need to know before teaming up.</p>
+
+      <div class="player-grid">
+        <div>
+          <div class="player-name">Ashita Kumari</div>
+          <p class="player-bio">
+            I'm a Computer Science undergraduate at IoBM with a growing focus on
+            <strong style="color:var(--mint)">AI &amp; Machine Learning</strong> — from RAG chatbots to ML pipelines.
+            I like taking full ownership of what I build, learning by shipping real projects, and turning
+            messy problems into clean, working systems.
+          </p>
+
+          <div class="edu-card">
+            <span class="tag">🎓 EDUCATION</span>
+            <strong>BSc Computer Science</strong> — Institute of Business Management (IoBM), Karachi<br>
+            2024 – Present &nbsp;·&nbsp; CGPA <span class="cgpa">3.59 / 4.00</span>
+          </div>
+
+          <div class="stat-block">
+            <div class="stat-row"><b>AI &amp; ML</b><span>85%</span></div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-w="85"></div>
+            </div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-row"><b>Backend &amp; APIs</b><span>80%</span></div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-w="80"></div>
+            </div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-row"><b>Problem Solving</b><span>90%</span></div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-w="90"></div>
+            </div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-row"><b>Team Collaboration</b><span>88%</span></div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-w="88"></div>
+            </div>
           </div>
         </div>
-        <div class="controls">
-          <div class="dpad"></div>
-          <div class="abxy"><span></span><span></span><span></span><span></span></div>
+
+        <div class="console">
+          <div class="console-top">
+            <span class="console-led"></span>
+            <span class="console-brand">AK-DS &nbsp;COLOR</span>
+          </div>
+          <div class="console-screen">
+            <img src="ashita.jpg" alt="Ashita Kumari">
+          </div>
+          <div class="console-caption">"let's build something ✦"</div>
+          <div class="console-controls">
+            <div class="dpad">
+              <div class="v"></div>
+              <div class="h"></div>
+            </div>
+            <div class="abxy">
+              <span class="y">Y</span><span class="x">X</span>
+              <span class="b">B</span><span class="a">A</span>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="player-panels">
-        <div class="pixel-panel">
-          <div class="panel-titlebar">HELLO!! <div class="dots"><span></span><span></span><span></span></div></div>
-          <div class="panel-body">
-            <p><strong>Player:</strong> Ashita Kumari</p>
-            <p><strong>Class:</strong> CS Student — Software &amp; AI/ML</p>
-            <p><strong>Mission:</strong> Build full-stack apps and AI systems, one working project at a time.</p>
-            <p><strong>Status:</strong> Ready to build, ship, and learn.</p>
+  <!-- LEVEL 02 — SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <span class="eyebrow">LEVEL 02</span>
+      <h2 class="level-title">Skill Mastery</h2>
+      <p class="section-sub">The inventory I bring to every project.</p>
+
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>LANGUAGES</h3>
+          <div class="item-slots">
+            <div class="item-slot"><i class="fa-brands fa-python"></i>Python</div>
+            <div class="item-slot"><i class="fa-solid fa-mug-hot"></i>Java</div>
+            <div class="item-slot"><i class="fa-brands fa-js"></i>JavaScript</div>
+            <div class="item-slot"><i class="fa-solid fa-code"></i>C</div>
           </div>
         </div>
-        <div class="pixel-panel">
-          <div class="panel-body" style="display:flex; flex-direction:column; gap:2px;">
-            <div class="stat-row"><span>LOCATION</span><span>Karachi, PK</span></div>
-            <div class="stat-row"><span>SCHOOL</span><span>IoBM</span></div>
-            <div class="stat-row"><span>CGPA</span><span>3.59 / 4.00</span></div>
-            <div class="stat-row"><span>PROJECTS</span><span>06 shipped</span></div>
+
+        <div class="skill-group">
+          <h3>WEB DEVELOPMENT</h3>
+          <div class="item-slots">
+            <div class="item-slot"><i class="fa-solid fa-flask"></i>Flask</div>
+            <div class="item-slot"><i class="fa-solid fa-diagram-project"></i>REST APIs</div>
+            <div class="item-slot"><i class="fa-brands fa-html5"></i>HTML5</div>
+            <div class="item-slot"><i class="fa-brands fa-css3-alt"></i>CSS3</div>
+            <div class="item-slot"><i class="fa-solid fa-fire"></i>Jinja2</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>AI &amp; MACHINE LEARNING</h3>
+          <div class="item-slots">
+            <div class="item-slot"><i class="fa-solid fa-link"></i>LangChain</div>
+            <div class="item-slot"><i class="fa-solid fa-chart-line"></i>scikit-learn</div>
+            <div class="item-slot"><i class="fa-solid fa-magnifying-glass"></i>RAG</div>
+            <div class="item-slot"><i class="fa-solid fa-comments"></i>NLP</div>
+            <div class="item-slot"><i class="fa-solid fa-wand-magic-sparkles"></i>Prompt Eng.</div>
+            <div class="item-slot"><i class="fa-solid fa-robot"></i>LLMs</div>
+            <div class="item-slot"><i class="fa-solid fa-cube"></i>Vector Embeddings</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>DATABASES</h3>
+          <div class="item-slots">
+            <div class="item-slot"><i class="fa-solid fa-database"></i>MySQL</div>
+            <div class="item-slot"><i class="fa-solid fa-database"></i>SQLite</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>DEVELOPER TOOLS</h3>
+          <div class="item-slots">
+            <div class="item-slot"><i class="fa-brands fa-git-alt"></i>Git</div>
+            <div class="item-slot"><i class="fa-brands fa-github"></i>GitHub</div>
+            <div class="item-slot"><i class="fa-solid fa-paper-plane"></i>Postman</div>
+            <div class="item-slot"><i class="fa-solid fa-laptop-code"></i>VS Code</div>
+            <div class="item-slot"><i class="fa-solid fa-book"></i>Jupyter</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="stat-strip reveal">
-    <div class="pixel-panel">
-      <div class="num">06</div>
-      <div class="label">Projects Shipped</div>
-    </div>
-    <div class="pixel-panel">
-      <div class="num">3.59</div>
-      <div class="label">CGPA / 4.00</div>
-    </div>
-    <div class="pixel-panel">
-      <div class="num">02</div>
-      <div class="label">Certifications</div>
+  <!-- LEVEL 03 — PROJECTS / QUEST LOG -->
+  <section class="section" id="quests">
+    <div class="wrap">
+      <span class="eyebrow">LEVEL 03</span>
+      <h2 class="level-title">Quest Log</h2>
+      <p class="section-sub">Completed builds — click-through code coming soon on GitHub.</p>
+
+      <div class="quest-grid">
+
+        <div class="quest-card">
+          <div class="quest-head">
+            <span class="quest-id">QUEST 01</span>
+            <span class="quest-status">COMPLETE</span>
+          </div>
+          <h3>SkillSwap — Peer Skill Exchange Platform</h3>
+          <ul>
+            <li>Full-stack platform where users trade skills, with auth, session login and full CRUD through a Flask
+              REST backend.</li>
+            <li>Normalized MySQL schema with foreign keys and indexed queries, wired to a JS frontend for dynamic
+              updates.</li>
+          </ul>
+          <div class="quest-tags"><span>Python</span><span>Flask</span><span>MySQL</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="quest-card">
+          <div class="quest-head">
+            <span class="quest-id">QUEST 02</span>
+            <span class="quest-status">COMPLETE</span>
+          </div>
+          <h3>Context-Aware RAG Chatbot</h3>
+          <ul>
+            <li>Retrieval-Augmented Generation chatbot that answers straight from uploaded documents instead of model
+              memory.</li>
+            <li>Document chunking + vector embeddings for semantic search, plus multi-turn memory for coherent
+              conversations.</li>
+          </ul>
+          <div class="quest-tags"><span>Python</span><span>LangChain</span><span>Vector Embeddings</span></div>
+        </div>
+
+        <div class="quest-card">
+          <div class="quest-head">
+            <span class="quest-id">QUEST 03</span>
+            <span class="quest-status">COMPLETE</span>
+          </div>
+          <h3>AI-Powered Resume &amp; Career Assistant</h3>
+          <ul>
+            <li>Java desktop app that generates resumes and cover letters through Google's Gemini API — no more manual
+              drafting.</li>
+            <li>Request-response pipeline built around encapsulated, reusable classes so new document types drop in
+              easily.</li>
+          </ul>
+          <div class="quest-tags"><span>Java</span><span>Gemini API</span></div>
+        </div>
+
+        <div class="quest-card">
+          <div class="quest-head">
+            <span class="quest-id">QUEST 04</span>
+            <span class="quest-status">COMPLETE</span>
+          </div>
+          <h3>Customer Churn Prediction — ML Pipeline</h3>
+          <ul>
+            <li>End-to-end pipeline with scikit-learn covering imputation, encoding, scaling and training in one
+              reproducible flow.</li>
+            <li>Compared Logistic Regression vs. Random Forest, tuning class weights to lift F1-score on imbalanced
+              data.</li>
+          </ul>
+          <div class="quest-tags"><span>Python</span><span>scikit-learn</span><span>Pandas</span></div>
+        </div>
+
+        <div class="quest-card">
+          <div class="quest-head">
+            <span class="quest-id">QUEST 05</span>
+            <span class="quest-status">COMPLETE</span>
+          </div>
+          <h3>University Timetable &amp; CPU Scheduling System</h3>
+          <ul>
+            <li>Web-based scheduler built with Flask Blueprints in an MVC structure, exposing REST endpoints for full
+              CRUD.</li>
+            <li>Conflict-detection logic that flags overlapping bookings and auto-generates a clash-free timetable.</li>
+          </ul>
+          <div class="quest-tags"><span>Python</span><span>Flask</span><span>REST API</span></div>
+        </div>
+
+        <div class="quest-card">
+          <div class="quest-head">
+            <span class="quest-id">QUEST 06</span>
+            <span class="quest-status">COMPLETE</span>
+          </div>
+          <h3>Auto-Tagging Support Tickets with LLMs</h3>
+          <ul>
+            <li>NLP pipeline that classifies and tags incoming support tickets across 3+ categories, no manual sorting
+              needed.</li>
+            <li>Prompts structured around few-shot examples per category to keep classification consistent.</li>
+          </ul>
+          <div class="quest-tags"><span>Python</span><span>NLP</span><span>Prompt Engineering</span></div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <section class="level-select reveal">
-    <p class="kicker">SELECT YOUR LEVEL</p>
-    <h2>WHERE TO NEXT?</h2>
-    <div class="level-grid">
-      <a href="about.html" class="level-tile">
-        <div class="pixel-panel">
-          <div class="panel-titlebar">LEVEL 01</div>
-          <div class="panel-body">
-            <div class="emoji">🧑‍💻</div>
-            <h3>ABOUT ME</h3>
-            <p>Stats, skills &amp; how I work</p>
+  <!-- LEVEL 04 — ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="wrap">
+      <span class="eyebrow">LEVEL 04</span>
+      <h2 class="level-title">Achievements Unlocked</h2>
+      <p class="section-sub">Certifications, leadership &amp; extracurricular XP.</p>
+
+      <div class="badge-grid">
+        <div class="badge-card">
+          <div class="badge-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div>
+            <h4>IBM SkillsBuild — AI Fundamentals</h4>
+            <p>Machine learning applications, AI ethics &amp; foundational AI concepts.</p>
           </div>
         </div>
-      </a>
-      <a href="projects.html" class="level-tile">
-        <div class="pixel-panel">
-          <div class="panel-titlebar">LEVEL 02</div>
-          <div class="panel-body">
-            <div class="emoji">🗂️</div>
-            <h3>PROJECTS</h3>
-            <p>6 quests, Flask to RAG</p>
+        <div class="badge-card">
+          <div class="badge-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div>
+            <h4>Ascend Launchpad 2.0 — CSR Forum Pakistan</h4>
+            <p>Designed data-driven solutions for urban community challenges in a 4-week program.</p>
           </div>
         </div>
-      </a>
-      <a href="contact.html" class="level-tile">
-        <div class="pixel-panel">
-          <div class="panel-titlebar">LEVEL 03</div>
-          <div class="panel-body">
-            <div class="emoji">💾</div>
-            <h3>CONTACT</h3>
-            <p>Save your progress</p>
+        <div class="badge-card">
+          <div class="badge-icon"><i class="fa-solid fa-flag"></i></div>
+          <div>
+            <h4>Student Ambassador</h4>
+            <p>School of Leadership.</p>
           </div>
         </div>
-      </a>
+        <div class="badge-card">
+          <div class="badge-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <div>
+            <h4>Promotion Lead</h4>
+            <p>Model United Nations.</p>
+          </div>
+        </div>
+        <div class="badge-card">
+          <div class="badge-icon"><i class="fa-solid fa-users"></i></div>
+          <div>
+            <h4>Member — Tech Visionary Society</h4>
+            <p>IoBM.</p>
+          </div>
+        </div>
+        <div class="badge-card">
+          <div class="badge-icon"><i class="fa-solid fa-users"></i></div>
+          <div>
+            <h4>Member — SWAT Society</h4>
+            <p>IoBM.</p>
+          </div>
+        </div>
+        <div class="badge-card">
+          <div class="badge-icon"><i class="fa-solid fa-star"></i></div>
+          <div>
+            <h4>Young Leaders Conference</h4>
+            <p>6-day leadership program participant.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-</main>
 
-<footer class="game-foot">
-  <div class="wrap">
-    <span>© 2026 ASHITA K.</span>
-    <span>LEVEL 00 / 03</span>
-    <span class="social">
-      <a href="https://www.linkedin.com/in/ashita-kumari-00876135b/" target="_blank">LINKEDIN</a>
-      <a href="https://github.com/Ashita829" target="_blank">GITHUB</a>
-    </span>
-  </div>
-</footer>
+  <!-- SAVE / CONTACT -->
+  <section class="section" id="save">
+    <div class="wrap">
+      <div class="save-card">
+        <span class="eyebrow">SAVE POINT</span>
+        <h2 class="level-title">Continue the Story?</h2>
+        <p>Open to internships, collabs &amp; interesting problems. Reach out — I reply fast.</p>
+        <div class="save-links">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashitakumari15@gmail.com" target="_blank"
+            class="pixel-btn"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="https://www.linkedin.com/in/ashita-kumari-00876135b/" target="_blank" class="pixel-btn lav"><i
+              class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/Ashita829" target="_blank" class="pixel-btn rose"><i
+              class="fa-brands fa-github"></i> GitHub</a>
+          <a href="ashita_CV.pdf" download class="pixel-btn ghost"><i class="fa-solid fa-file-arrow-down"></i> CV</a>
+        </div>
+        <div style="color:var(--text-dim); font-size:0.8rem;">
+          Karachi, Pakistan <span class="blink-cursor">▮</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div id="ai-chat-container" class="chat-minimized">
-  <div class="chat-header">
-    <span class="icon">👾</span><span>ASK NPC</span>
-    <button id="close-chat" aria-label="Close">&times;</button>
-  </div>
-  <div class="chat-body" id="chat-body"></div>
-  <div class="chat-input">
-    <form id="chat-form" onsubmit="return false;">
-      <input type="text" id="user-input" placeholder="ask about quests…" autocomplete="off" />
-      <button id="send-btn" type="submit">GO</button>
-    </form>
-  </div>
-</div>
+  <footer>
+    © 2026 Ashita Kumari — built with code &amp; <span class="heart">♥</span> — loading next level...
+  </footer>
 
-<script src="script.js"></script>
+  <!-- NPC hint chat -->
+  <div id="ai-chat-container" class="chat-minimized">
+    <div class="chat-header">
+      <span>◆ NPC HINT</span>
+      <button id="close-chat"><i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <p class="bot-msg">Hey! Ask me about Ashita's projects, skills, or education. 🎮</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type a message...">
+      <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
